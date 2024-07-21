@@ -43,5 +43,6 @@ body {
 
 .footer {
     border-top: 5px double #584f69;
+    margin-top: 10px;
     padding: 20px;
 }

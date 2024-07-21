@@ -5,15 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   blogPosts.forEach((post) => {
     const postElement = document.createElement("div");
     postElement.className = "blog-post";
-    postElement.innerHTML = `<h2>${post.title}</h2><p>${post.content}</p><small>By ${post.username}</small>`;
+    postElement.innerHTML = `<h2>${post.title}</h2><p>${post.content}</p><small>Posted by: ${post.username}</small>`;
     blogPostsContainer.appendChild(postElement);
-  });
-
-  document.getElementById('toggleMode').addEventListener('click', function() {
-    document.body.classList.toggle('dark-mode');
-  });
-
-  document.getElementById('backButton').addEventListener('click', function(){
-    window.location.href = 'index.html';
   });
 });
