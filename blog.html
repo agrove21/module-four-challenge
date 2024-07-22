@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Blog Posts</title>
   </head>
   <body>
     <header>
-      <header class="header">
+      <header class="blog-header">
         <h1>My First Blog</h1>
         <div>
             <button id="back-btn" onclick="goToIndex()">← Back</button>
-            <button id="header-btn">☀️</button>
+            <button id="theme-toggle-btn" class="theme-toggle">
+              <span id="toggle-icon">☀️</span>
+            </button>
         </div>
     </header>
     <main id="blogPosts">

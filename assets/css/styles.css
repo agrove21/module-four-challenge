@@ -1,3 +1,30 @@
+.header {
+    display: flex;
+    background-color: whitesmoke;
+    border-bottom: 5px double #584f69;
+    justify-content: end;
+    align-items: center;
+}
+
+.theme-toggle {
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.theme-toggle:focus {
+    outline: none;
+}
+
+#back-btn {
+    background-color: #584f69;
+    border: none;
+    padding: 8px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
 body {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     background-color: whitesmoke;
@@ -5,22 +32,8 @@ body {
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: #121212;
     color: whitesmoke;
-}
-
-#header-btn {
-    background-color: whitesmoke;
-    border: none;
-    cursor: pointer;
-}
-
-.header {
-    display: flex;
-    background-color: whitesmoke;
-    border-bottom: 5px double #584f69;
-    justify-content: end;
-    align-items: center;
 }
 
 .circle {
@@ -65,7 +78,27 @@ body {
 
 .footer {
     border-top: 5px double #584f69;
+    margin-top: 10px;
     padding: 20px;
 }
 
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px auto;
+        height: 1000px;
+    }
+
+    .right-container {
+        border-left: none;
+    }
+
+    .footer {
+        border-top: none;
+    }
+}
 
